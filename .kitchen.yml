@@ -4,11 +4,19 @@ driver:
 
 provisioner:
   name: ansible_playbook
+  playbook: auth-playbook.yml
+  hosts:
 
 platforms:
   - name: centos-6.7
 
 suites:
-  - name: RP
-  - name: SSO
-  - name: LDAP
+  - name: RP1
+    provisioner:
+      hosts: RP
+  - name: SSO1
+    provisioner:
+      hosts: SSO
+  - name: LDAP1
+    provisioner:
+      hosts: LDAP
