@@ -8,3 +8,4 @@ group :integration do
   gem 'serverspec'
   gem 'infrataster'
 end
+gem "kitchen-vagrant"
