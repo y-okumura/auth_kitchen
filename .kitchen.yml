@@ -6,10 +6,9 @@ provisioner:
   name: ansible_playbook
 
 platforms:
-  - name: ubuntu-14.04
-  - name: centos-7.2
+  - name: centos-6.7
 
 suites:
-  - name: default
-    run_list:
-    attributes:
+  - name: RP
+  - name: SSO
+  - name: LDAP
