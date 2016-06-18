@@ -5,7 +5,6 @@ driver:
 provisioner:
   name: ansible_playbook
   playbook: auth-playbook.yml
-  hosts:
 
 platforms:
   - name: centos-6.7
