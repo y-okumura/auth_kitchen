@@ -5,6 +5,10 @@ driver:
 provisioner:
   name: ansible_playbook
   playbook: auth-playbook.yml
+  require_ruby_for_busser: true
+
+verifier:
+  ruby_bindir: '/usr/bin'
 
 platforms:
   - name: centos-6.7
