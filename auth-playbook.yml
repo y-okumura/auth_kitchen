@@ -1,0 +1,6 @@
+- hosts: RP
+  roles:
+- hosts: SSO
+  roles:
+- hosts: LDAP
+  roles:
